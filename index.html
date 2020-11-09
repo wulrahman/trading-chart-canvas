@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Simple Canvas Charting</title>
+    </header>
+    <style>
+        .main_body canvas#myCanvas {
+            background-color: #ffffff;
+            margin: auto;
+            width: 1000px;
+            display: block;
+        }
+        .main_body .title h1 {
+            color: #ffffff;
+            text-align: center;
+            margin:0;
+            padding:20px;
+        }
+        body {
+            background-color: #3F51B5;
+            font-family: 'Gilroy';
+        }
+        .main_body {
+            width: 1000px;
+            margin: 80px auto;
+            background-color: #2c3778;
+            border-radius: 5px;
+            box-shadow: 2px 1px 11px 0px #33343c;
+            /* padding: 20px; */
+        }
+    </style>        
+<body>
+
+<div class="main_body">
+    <div class="title"><h1>Simple Canvas Charting</h1></div>
+    <canvas id="myCanvas" width="1000px" height="500px">Your browser does not support the canvas tag.</canvas>
+</div>
+<script src="bit_demo_testdata.js"></script>
+<script src="chart.js"></script>
+
+<script>
+initialise(BIT_TEST_DATA.data);
+
+</script>
+
+</body>
+</html>
